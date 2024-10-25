@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('chispas.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(255, 143, 220); 
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Define el tamaño de la cuadrícula */
+    grid-gap: 5px; /* Espacio entre las celdas */
+    margin: 20px auto;
+    background-color: white; /* Asegura que el fondo del tablero sea visible */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff; /* Color de fondo para los cuadrados */
+    border: 7px solid #ff0c9e; /* Bordes visibles */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 36px;
+}
+
+.square.x {
+    color: rgb(0, 0, 0); 
+    font-size: 60px; 
+}
+
+.square.o {
+    color: rgb(0, 0, 0); 
+    font-size: 60px; 
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #ca0456;
+}
+
+.best-times {
+    margin-top: 20px;
+    background-color: #ffeffe;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+#restart-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff1b9c; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#restart-btn:hover {
+    background-color: #3c0424; 
+}
+
+#time-list {
+    list-style-type: none;
+    padding: 0;
+    color: #d9007f;
+}
